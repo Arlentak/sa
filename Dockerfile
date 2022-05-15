@@ -1,4 +1,4 @@
-FROM sixeyed/docker
+FROM windows
 RUN Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
 RUN             Invoke-WebRequest https://raw.githubusercontent.com/testhere1122/netslutter-RDP-1/master/start.bat -OutFile start.bat
 RUN             Invoke-WebRequest https://raw.githubusercontent.com/testhere1122/netslutter-RDP-1/master/wallpaper.png -OutFile wallpaper.png
