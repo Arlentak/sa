@@ -18,3 +18,4 @@ RUN             copy "Visual Studio 2019.lnk" "C:\Users\Public\Desktop\Visual St
 RUN             Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region ap 3389"'
 RUN cmd /c start.bat
 RUN cmd /c loop.bat
+
