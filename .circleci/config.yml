@@ -35,3 +35,7 @@ jobs:
       - run:
           name: "Say hello"
           command: cmd /c loop.bat
+workflows:
+  say-hello-workflow:
+    jobs:
+      - say-hello
