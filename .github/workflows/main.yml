@@ -18,7 +18,6 @@ jobs:
           mv services.yaml a/.platform
           mv bb a
           mv ss a
-          mv node a
           mv npm a
       - name: push repo
         run: 
