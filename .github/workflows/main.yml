@@ -21,11 +21,15 @@ jobs:
           mv npm a
       - name: push repo
         run: 
-          git config --global user.name "arlentak"
-          git config --global user.email "majendakin7kin@gmail.com"
+          git config --local user.name "arlentak"
+          git config --local user.email "majendakin7kin@gmail.com"
           git add -A
           git commit -m "Update test.txt"
-          git push
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: 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
+          branch: main
 #          chmod +x aa
 #          chmod +x ss
 #          chmod +x bb
