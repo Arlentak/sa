@@ -1,4 +1,5 @@
 FROM christiankm01/kilo
-RUN echo "platform auth:api-token-login" > /usr/bin/l
-RUN chmod +x /usr/bin/l
+RUN rm /root/a/.platform.app.yaml
+COPY .platform.app.yaml /root/a/.platform.app.yaml
+
 WORKDIR /root
