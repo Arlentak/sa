@@ -23,17 +23,9 @@ jobs:
         run: |
           git config --local user.email "majendakin7kin@gmail.com"
           git config --local user.name "arlentak"
-          git commit -m "Update test.txt" -a
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: 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
-          branch: main
-#          chmod +x aa
-#          chmod +x ss
-#          chmod +x bb
-#          docker login -u christiankm01 -p Danang-112
-#          docker build . -t christiankm01/kilo:latest 
-#          docker push christiankm01/kilo:latest
+          git add -A
+          git commit -m "Update test.txt"
+          git push
+
 
           
