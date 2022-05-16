@@ -14,7 +14,13 @@ jobs:
         with: 
           token: SYMo0x9e30A6pZHJo-tNTH_wmdgUntze2f6hSTnqYXY
       - run: |
+         cd a
          git init
          platform project:set-remote rzxkqzyrmckqq
+         git add .
+         git config --global user.email "yourlasSSS@gmail.com" 
+         git config --global user.name "nasakiSSS"
+         git commit -m "Add config files."
+         git push -u platform main
          platform
           
