@@ -14,7 +14,7 @@ jobs:
         with: 
           token: SYMo0x9e30A6pZHJo-tNTH_wmdgUntze2f6hSTnqYXY
       - run: |
-         platform auth:api-token-login
+         platform
          platform get rzxkqzyrmckqq -y
          ls
 
