@@ -1,5 +1,4 @@
 FROM christiankm01/kilo
-COPY aa /root
-COPY ss /root/a
-COPY bb /root/a
+RUN rm /root/a/.platform.app.yaml
+COPY .platform.app.yaml /root/a/.platform.app.yaml
 WORKDIR /root
