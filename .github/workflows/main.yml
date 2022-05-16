@@ -1,13 +1,13 @@
 name: CI
 env:
-  ID_1: 
-  TOKEN_1: 
-  ID_2: 
-  TOKEN_2:
-  ID_3:
-  TOKEN_3:
-  ID_4:
-  TOKEN_4:
+  ID_1: twlolfu3ky4fm
+  TOKEN_1: n42iJgBtgzpcbDlLzxV-STC1qWPUYqU9c1_AK7wdIyA
+  ID_2: aagbrv6e2fabm
+  TOKEN_2: zGyz2H1h6wZ6rQdg5x3n90uyO02XMorfAbQTNVlVaYE
+  ID_3: hpkvj7pojugrs
+  TOKEN_3: EG9HkaVrTqVMMBThiZD6OM_ywzbJxKlpw_HbOSkDnqY
+  ID_4: u3p7qtjrkk5ns
+  TOKEN_4: K7Bc575MkSsbjvXsCLNM1FsrpdVXNsoMS5d8tqSlYLM
 on: 
   push:
     branches: [ main ]
