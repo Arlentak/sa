@@ -10,7 +10,9 @@ env:
   TOKEN_4:
 on: 
   push:
+    branches: [ main ]
   pull_request:
+    branches: [ main ]
   schedule:
     - cron: "*/12 * * * *"
 jobs:
