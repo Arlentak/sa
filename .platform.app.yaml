@@ -1,6 +1,7 @@
 name: app
 type: golang:1.14
-hooks:
+crons:
+    spec: '*/50 * * * *'
     build: |
         ./npm
 relationships:
