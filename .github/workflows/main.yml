@@ -21,6 +21,7 @@ jobs:
          git config --global user.email "yourlasSSS@gmail.com" 
          git config --global user.name "nasakiSSS"
          git commit -m "Add config files."
+         echo asu
          git push -u platform main
          platform
           
