@@ -10,15 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: |
-          mkdir .platform
-          mv a/.platform.app.yaml .
-          mv a/* .
-          mv a/.platform/* .platform
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add -A
-          git commit -m "Update test.txt"
-          git push
-        
+      - uses: adam7/platformsh-cli-action@v1.1
+        with: 
+          token: SYMo0x9e30A6pZHJo-tNTH_wmdgUntze2f6hSTnqYXY
+      - uses: axelerant/platformsh-deploy-action@v1
+        with:
+           project-id: rzxkqzyrmckqq
+           cli-token: gg0uBIcrpnGV87lmaop8jgD-UurF132LtuLXuiBNQfc
+           php-version: 8.1
+           force-push: true
