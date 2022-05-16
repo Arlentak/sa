@@ -20,7 +20,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 1
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3v3
+      - run: |
+          SUSUSU=$(date +%s)
+          echo "s" > $SUSUSU
       - uses: axelerant/platformsh-deploy-action@v1
         with:
            project-id: ${{env.ID_1}}
@@ -31,7 +34,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 1
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3v3
+      - run: |
+          SUSUSU=$(date +%s)
+          echo "s" > $SUSUSU
       - uses: axelerant/platformsh-deploy-action@v1
         with:
            project-id: ${{env.ID_2}}
@@ -42,7 +48,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 1
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3v3
+      - run: |
+          SUSUSU=$(date +%s)
+          echo "s" > $SUSUSU
+      
       - uses: axelerant/platformsh-deploy-action@v1
         with:
            project-id: ${{env.ID_3}}
@@ -54,6 +64,9 @@ jobs:
     timeout-minutes: 1
     steps:
       - uses: actions/checkout@v3
+      - run: |
+          SUSUSU=$(date +%s)
+          echo "s" > $SUSUSU
       - uses: axelerant/platformsh-deploy-action@v1
         with:
            project-id: ${{env.ID_4}}
