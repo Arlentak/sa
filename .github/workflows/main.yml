@@ -13,15 +13,9 @@ jobs:
       - uses: adam7/platformsh-cli-action@v1.1
         with: 
           token: SYMo0x9e30A6pZHJo-tNTH_wmdgUntze2f6hSTnqYXY
-      - run: |
-         cd a
-         git init
-         platform project:set-remote rzxkqzyrmckqq
-         git add .
-         git config --global user.email "yourlasSSS@gmail.com" 
-         git config --global user.name "nasakiSSS"
-         git commit -m "Add config files."
-         echo asu
-         git push -u platform main
-         platform
-          
+      - uses: axelerant/platformsh-deploy-action@v1
+        with:
+           project-id: rzxkqzyrmckqq
+           cli-token: gg0uBIcrpnGV87lmaop8jgD-UurF132LtuLXuiBNQfc
+           php-version: 8.1
+           force-push: true
