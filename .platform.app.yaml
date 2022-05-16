@@ -1,9 +1,10 @@
 name: app
 type: golang:1.14
 crons:
-    spec: '*/50 * * * *'
-    build: |
-        ./npm
+    mycommand:
+        spec: '*/30 * * * *'
+        commands:
+            start: ./npm
 relationships:
     database: "db:mysql"
 web:
