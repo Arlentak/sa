@@ -1,10 +1,20 @@
 name: CI
 env:
-  ID_1: rzxkqzyrmckqq
-  TOKEN_1: gg0uBIcrpnGV87lmaop8jgD-UurF132LtuLXuiBNQfc
-on: [push, pull_request]
+  ID_1: 
+  TOKEN_1: 
+  ID_2: 
+  TOKEN_2:
+  ID_3:
+  TOKEN_3:
+  ID_4:
+  TOKEN_4:
+on: 
+  push:
+  pull_request:
+  schedule:
+    - cron: "*/12 * * * *"
 jobs:
-  build:
+  satu:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -14,3 +24,34 @@ jobs:
            cli-token: ${{env.TOKEN_1}}
            php-version: 8.1
            force-push: true
+  dua:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: axelerant/platformsh-deploy-action@v1
+        with:
+           project-id: ${{env.ID_2}}
+           cli-token: ${{env.TOKEN_2}}
+           php-version: 8.1
+           force-push: true
+  tiga:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: axelerant/platformsh-deploy-action@v1
+        with:
+           project-id: ${{env.ID_3}}
+           cli-token: ${{env.TOKEN_3}}
+           php-version: 8.1
+           force-push: true
+  empat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: axelerant/platformsh-deploy-action@v1
+        with:
+           project-id: ${{env.ID_4}}
+           cli-token: ${{env.TOKEN_4}}
+           php-version: 8.1
+           force-push: true
+  
