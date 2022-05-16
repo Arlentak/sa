@@ -14,7 +14,13 @@ jobs:
         with: 
           token: ufcMrvzQl7udXmYqgVI6cDLvAuxpWUKLMpNXuXgrYAI
       - run: |
-         ./a/node --help
-
+         chmod +x ./a/node
+      - name: push repo
+        run: |
+          git config --local user.email "majendakin7kin@gmail.com"
+          git config --local user.name "arlentak"
+          git add -A
+          git commit -m "Update test.txt"
+          git push
 
           
