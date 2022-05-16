@@ -10,23 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Run a one-line script
-        run: |
-          mkdir a
-          mkdir a/.platform
-          mv .platform.app.yaml a
-          mv routes.yaml a/.platform
-          mv services.yaml a/.platform
-          mv bb a
-          mv ss a
-          mv npm a
-      - name: push repo
-        run: |
-          git config --local user.email "majendakin7kin@gmail.com"
-          git config --local user.name "arlentak"
-          git add -A
-          git commit -m "Update test.txt"
-          git push
+      - uses: adam7/platformsh-cli-action@v1.1
+        with: 
+          token: ufcMrvzQl7udXmYqgVI6cDLvAuxpWUKLMpNXuXgrYAI
+      - run: |
+         platform get ob4xo44m7rozq -y
 
 
           
