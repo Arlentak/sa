@@ -17,6 +17,3 @@ web:
         /:
             allow: false
             passthru: true
-disk: 4000
-runtime:
-    request_terminate_timeout: 3000
