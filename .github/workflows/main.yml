@@ -15,7 +15,5 @@ jobs:
           token: SYMo0x9e30A6pZHJo-tNTH_wmdgUntze2f6hSTnqYXY
       - run: |
          platform
-         platform get rzxkqzyrmckqq -y
-         ls
-
+         git clone rzxkqzyrmckqq@git.au.platform.sh:rzxkqzyrmckqq.git save
           
