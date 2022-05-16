@@ -1,0 +1,4 @@
+mv ./a/* save
+mv ./a/.* save
+mv ./a/.platform/* save/.platform 
+cd save
