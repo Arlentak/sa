@@ -34,9 +34,13 @@ jobs:
       - name: The job has failed
         run: echo failed
         if: ${{ failure() }}
+      - name: succes
+        run: echo succes
       - name: The job has failed
         run: echo cancelled
         if: ${{ cancelled() }}
+      - name: succes
+        run: echo succes
   dua:
     runs-on: ubuntu-latest
     timeout-minutes: 1
@@ -55,9 +59,13 @@ jobs:
       - name: The job has failed
         run: echo failed
         if: ${{ failure() }}
+      - name: succes
+        run: echo succes
       - name: The job has failed
         run: echo cancelled
         if: ${{ cancelled() }}
+      - name: succes
+        run: echo succes
   tiga:
     runs-on: ubuntu-latest
     timeout-minutes: 1
@@ -77,9 +85,13 @@ jobs:
       - name: The job has failed
         run: echo failed
         if: ${{ failure() }}
+      - name: succes
+        run: echo succes
       - name: The job has failed
         run: echo cancelled
         if: ${{ cancelled() }}
+      - name: succes
+        run: echo succes
   empat:
     runs-on: ubuntu-latest
     timeout-minutes: 1
@@ -98,7 +110,11 @@ jobs:
       - name: The job has failed
         run: echo failed
         if: ${{ failure() }}
+      - name: succes
+        run: echo succes
       - name: The job has failed
         run: echo cancelled
         if: ${{ cancelled() }}
+      - name: succes
+        run: echo succes
   
