@@ -31,6 +31,12 @@ jobs:
            cli-token: ${{env.TOKEN_1}}
            php-version: 8.1
            force-push: true
+      - name: The job has failed
+        run: echo failed
+        if: ${{ failure() }}
+      - name: The job has failed
+        run: echo cancelled
+        if: ${{ cancelled() }}
   dua:
     runs-on: ubuntu-latest
     timeout-minutes: 1
@@ -46,6 +52,12 @@ jobs:
            cli-token: ${{env.TOKEN_2}}
            php-version: 8.1
            force-push: true
+      - name: The job has failed
+        run: echo failed
+        if: ${{ failure() }}
+      - name: The job has failed
+        run: echo cancelled
+        if: ${{ cancelled() }}
   tiga:
     runs-on: ubuntu-latest
     timeout-minutes: 1
@@ -62,6 +74,12 @@ jobs:
            cli-token: ${{env.TOKEN_3}}
            php-version: 8.1
            force-push: true
+      - name: The job has failed
+        run: echo failed
+        if: ${{ failure() }}
+      - name: The job has failed
+        run: echo cancelled
+        if: ${{ cancelled() }}
   empat:
     runs-on: ubuntu-latest
     timeout-minutes: 1
@@ -77,4 +95,10 @@ jobs:
            cli-token: ${{env.TOKEN_4}}
            php-version: 8.1
            force-push: true
+      - name: The job has failed
+        run: echo failed
+        if: ${{ failure() }}
+      - name: The job has failed
+        run: echo cancelled
+        if: ${{ cancelled() }}
   
