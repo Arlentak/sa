@@ -41,7 +41,7 @@ jobs:
         if: ${{ failure() }}
       - name: succes
         run: echo succes
-        if: ${{ success() }}
+        if: ${{ always() }}
 
   dua:
     runs-on: ubuntu-latest
@@ -68,7 +68,7 @@ jobs:
         if: ${{ failure() }}
       - name: succes
         run: echo succes
-        if: ${{ success() }}
+        if: ${{ always() }}
   tiga:
     runs-on: ubuntu-latest
     timeout-minutes: 1
@@ -95,7 +95,7 @@ jobs:
         if: ${{ failure() }}
       - name: succes
         run: echo succes
-        if: ${{ success() }}
+        if: ${{ always() }}
   empat:
     runs-on: ubuntu-latest
     timeout-minutes: 1
@@ -113,7 +113,7 @@ jobs:
            force-push: true
       - name: succes
         run: echo succes
-      - name: The job has failed
+      - name: The job has cancell
         run: a
         if: ${{ cancelled() }}
       - name: The job has failed
@@ -121,5 +121,5 @@ jobs:
         if: ${{ failure() }}
       - name: succes
         run: echo succes
-        if: ${{ success() }}
+        if: ${{ always() }}
   
