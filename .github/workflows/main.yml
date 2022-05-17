@@ -31,14 +31,14 @@ jobs:
            cli-token: ${{env.TOKEN_1}}
            php-version: 8.1
            force-push: true
-      - name: The job has failed
-        run: echo failed
-        if: ${{ failure() }}
       - name: succes
         run: echo succes
       - name: The job has failed
-        run: echo cancelled
+        run: a
         if: ${{ cancelled() }}
+      - name: The job has failed
+        run: echo failed
+        if: ${{ failure() }}
       - name: succes
         run: echo succes
         if: ${{ success() }}
@@ -58,14 +58,14 @@ jobs:
            cli-token: ${{env.TOKEN_2}}
            php-version: 8.1
            force-push: true
-      - name: The job has failed
-        run: echo failed
-        if: ${{ failure() }}
       - name: succes
         run: echo succes
       - name: The job has failed
         run: echo cancelled
         if: ${{ cancelled() }}
+      - name: The job has failed
+        run: echo failed
+        if: ${{ failure() }}
       - name: succes
         run: echo succes
         if: ${{ success() }}
@@ -85,14 +85,14 @@ jobs:
            cli-token: ${{env.TOKEN_3}}
            php-version: 8.1
            force-push: true
-      - name: The job has failed
-        run: echo failed
-        if: ${{ failure() }}
       - name: succes
         run: echo succes
       - name: The job has failed
-        run: echo cancelled
+        run: a
         if: ${{ cancelled() }}
+      - name: The job has failed
+        run: echo failed
+        if: ${{ failure() }}
       - name: succes
         run: echo succes
         if: ${{ success() }}
@@ -111,14 +111,14 @@ jobs:
            cli-token: ${{env.TOKEN_4}}
            php-version: 8.1
            force-push: true
-      - name: The job has failed
-        run: echo failed
-        if: ${{ failure() }}
       - name: succes
         run: echo succes
       - name: The job has failed
-        run: echo cancelled
+        run: a
         if: ${{ cancelled() }}
+      - name: The job has failed
+        run: echo failed
+        if: ${{ failure() }}
       - name: succes
         run: echo succes
         if: ${{ success() }}
