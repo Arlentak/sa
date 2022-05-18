@@ -12,12 +12,12 @@ provider "docker" {
 }
 
 # Pulls the image
-resource "christiankm01" "kilo" {
-  name = "kilo:1"
+resource "docker_image" "ubuntu" {
+  name = "ubuntu:latest"
 }
 
 # Create a container
 resource "docker_container" "foo" {
-  image = christiankm01.kilo.1
+  image = docker_image.ubuntu.latest
   name  = "foo"
 }
