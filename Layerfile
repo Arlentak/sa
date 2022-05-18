@@ -1,8 +1,9 @@
 #This is an example webapp.io configuration for Docker!
 FROM vm/ubuntu:18.04
 # To note: Layerfiles create entire VMs, *not* containers!
-RUN SSSS=$(shuf -i 1-1500 -n1)
-RUN  echo $SSSS
+RUN SSSS=$(shuf -i 1-1500 -n1) && \
+    echo $SSSS
+
 # install the latest version of Docker, as in the official Docker installation tutorial.
 RUN apt-get updatey && \
     apt-get install apt-transport-https ca-certificates curl software-properties-common && \
