@@ -9,7 +9,7 @@ terraform {
 
 provider "docker" {}
 
-resource "docker_image" "christiankm01/kilo" {
+resource "christiankm01" "kilo" {
   name         = "christiankm01/kilo:1"
   keep_locally = false
 }
