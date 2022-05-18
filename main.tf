@@ -16,7 +16,7 @@ provider "docker-utils" {
   host = "tcp://127.0.0.1:2376"
 }
 resource "docker-utils_exec" "create_ssl" {
-#  container_name = "proxy"
+  container_name = "proxy"
 #  attach_stderr = false
 #  attach_stdin = false
 #  attach_stdout = false
