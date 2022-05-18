@@ -4,31 +4,28 @@ terraform {
   required_providers {
     docker-utils = {
       source = "Kaginari/docker-utils"
+      version = "9.9.9"
     }
+
   }
 }
-variable "docker_tcp_host" { christiankm01 }
-variable "docker_container_name" { kilo:1 }
+
+variable "docker_container_name" {
+  default = "proxy"
+}
+
 
 provider "docker-utils" {
-    host = var.docker_tcp_host
+  host = "tcp://127.0.0.1:2376"
 }
-resource "docker-utils_exec" "exec" {
-
-  container_name = var.docker_container_name    #(Required) the container alias or id
-
-  # Exec Options
-
-  attach_stderr = true    # optional default false
-  attach_stdin = true     # optional default false
-  attach_stdout = true    # optional default false
-  detach  = true          # optional default false
-  tty  = true             # optional default false
-  privileged  = false     # optional default false
-  user  = "root"          # optional default root
-  working_dir = "/home"   # optional default root folder
-
-  # Exec commands
-  commands = ["/bin/bash","-c","ls"]                    # (Required) commands will be applied on apply
-                                                 # (Optional) environment will be applied on destroy
+resource "docker-utils_exec" "create_ssl" {
+  container_name = "proxy"
+  attach_stderr = false
+  attach_stdin = false
+  attach_stdout = false
+  detach  = true
+  tty  = true
+  commands = ["/bin/bash","-c","mkdir example && touch example/$DOMAIN.txt"]
+  environment = ["DOMAIN=sonarqube.kaginari.com"]
+  destroy_commands = ["/bin/bash","-c","rm -rf example"]
 }
