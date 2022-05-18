@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     docker = {
-      source = "terraform-providers/docker"
+      source = "christiankm01/kilo:1"
 
     }
   }
