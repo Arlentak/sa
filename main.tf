@@ -17,11 +17,7 @@ provider "docker-utils" {
 }
 resource "docker-utils_exec" "create_ssl" {
   container_name = "proxy"
-#  attach_stderr = false
-#  attach_stdin = false
-#  attach_stdout = false
-#  detach  = true
-#  tty  = true
+
   commands = ["/bin/bash","-c","ls -a"]
 
 }
