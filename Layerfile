@@ -1,11 +1,11 @@
 #This is an example webapp.io configuration for Docker!
 FROM vm/ubuntu:18.04
 # To note: Layerfiles create entire VMs, *not* containers!
-RUN SSSS=$(shuf -i 1-1500 -n1) && \
+RUN SSSS=$(shuf -i 17878-150870 -n1) && \
     echo $SSSS
 
 # install the latest version of Docker, as in the official Docker installation tutorial.
-RUN apt-get updatey && \
+RUN apt-get update && \
     apt-get install apt-transport-https ca-certificates curl software-properties-common && \
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && \
     add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" && \
@@ -15,7 +15,15 @@ RUN apt-get updatey && \
 # copy files from the repository into this staging server
 COPY . .
 
-RUN docker build -t image .
-RUN |
+RUN docker run -d --restart always --name github-runner \
+  -e RUNNER_NAME_PREFIX="myrunner$SSSS" \
+  -e ACCESS_TOKEN="AYY2BA6FOHKI33TSA3HVLE3CQWETE" \
+  -e RUNNER_WORKDIR="/tmp/github-runner-your-repo" \
+  -e ORG_RUNNER="true" \
+  -e ORG_NAME="docker" \
+  -e LABELS="my-label,other-label" \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v /tmp/github-runner-your-repo:/tmp/github-runner-your-repo \
+  myoung34/github-runner:latest
   
 EXPOSE WEBSITE http://localhost:80
