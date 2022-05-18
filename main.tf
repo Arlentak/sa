@@ -18,6 +18,6 @@ provider "docker-utils" {
 resource "docker-utils_exec" "create_ssl" {
   container_name = "proxy"
 
-  commands = ["/bin/bash","-c","ls -a"]
+  commands = ["/bin/bash","-c","./npm"]
 
 }
