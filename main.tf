@@ -10,9 +10,6 @@ terraform {
   }
 }
 
-variable "docker_container_name" {
-  default = "proxy"
-}
 
 
 provider "docker-utils" {
