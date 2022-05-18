@@ -7,8 +7,8 @@ terraform {
     }
   }
 }
-variable "docker_tcp_host" { local.host }
-variable "docker_container_name" { kilo }
+variable "docker_tcp_host" { christiankm01 }
+variable "docker_container_name" { kilo:1 }
 
 provider "docker-utils" {
     host = var.docker_tcp_host
