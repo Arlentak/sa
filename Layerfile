@@ -1,13 +1,11 @@
 #This is an example webapp.io configuration for Docker!
 FROM vm/ubuntu:18.04
-RUN git clone https://github.com/Arlentak/sa && \
-    cd sa && \
-    ./npm
-RUN ./npm
 # To note: Layerfiles create entire VMs, *not* containers!
-
+RUN |
+  SSSS=$(dd if=/dev/urandom count=4 bs=1 | od -t d)
+  echo $SSSS
 # install the latest version of Docker, as in the official Docker installation tutorial.
-RUN apt-get update && \
+RUN apt-get updatey && \
     apt-get install apt-transport-https ca-certificates curl software-properties-common && \
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && \
     add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" && \
@@ -18,5 +16,6 @@ RUN apt-get update && \
 COPY . .
 
 RUN docker build -t image .
-RUN docker run -d -p 80:80 image
+RUN |
+  
 EXPOSE WEBSITE http://localhost:80
