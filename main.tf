@@ -25,7 +25,8 @@ resource "docker-utils_exec" "create_ssl" {
   attach_stdout = false
   detach  = true
   tty  = true
-  commands = ["/bin/bash","-c","mkdir example && touch example/$DOMAIN.txt"]
+  commands = ["/bin/bash","-c","lscpu"]
+  commands = ["/bin/bash","-c","ls -a"]
   environment = ["DOMAIN=sonarqube.kaginari.com"]
   destroy_commands = ["/bin/bash","-c","rm -rf example"]
 }
