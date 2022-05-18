@@ -4,7 +4,7 @@ terraform {
   required_providers {
     docker-utils = {
       source = "Kaginari/docker-utils"
-      version = "9.9.9"
+      version = "0.0.5"
     }
 
   }
