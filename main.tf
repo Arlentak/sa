@@ -1,24 +1,23 @@
 terraform {
   required_providers {
     docker = {
-      source = "christiankm01/kilo"
-
+      source  = "kreuzwerker/docker"
+      version = "2.16.0"
     }
   }
 }
 
-provider "docker" {}
-
-resource "christiankm01" "kilo" {
-  name         = "christiankm01/kilo:1"
-  keep_locally = false
+provider "docker" {
+  host = "unix:///var/run/docker.sock"
 }
 
-resource "docker_container" "nginx" {
-  image = docker_image.nginx.latest
-  name  = "tutorial"
-  ports {
-    internal = 80
-    external = 8000
-  }
+# Pulls the image
+resource "christiankm01" "kilo" {
+  name = "kilo:1"
+}
+
+# Create a container
+resource "docker_container" "foo" {
+  image = christiankm01.kilo.1
+  name  = "foo"
 }
