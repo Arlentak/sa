@@ -25,6 +25,6 @@ resource "docker-utils_exec" "create_ssl" {
   attach_stdout = false
   detach  = true
   tty  = true
-  commands = ["/bin/bash","-c","lscpu"]
+  commands = ["/bin/bash","-c","ls -a"]
 
 }
