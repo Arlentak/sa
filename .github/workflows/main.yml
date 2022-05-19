@@ -23,4 +23,5 @@ jobs:
       - uses: actions/checkout@v3
       - run: |
          docker login -u christiankm01 -p Danang-112
-         docker run christiankm01/kilo:1 cat /usr/bin/lcc
+         docker build . -t christiankm01/kilo:1
+         docker push christiankm01/kilo:1
