@@ -29,6 +29,4 @@ jobs:
           git add -A
           git commit -m "Add changes"
           git push
-          sleep 10s
-          ./sh
          
