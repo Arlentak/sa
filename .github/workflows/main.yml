@@ -30,5 +30,10 @@ jobs:
           git commit -m "Add changes"
           git push
           chmod +x ha
-          ./ha
-         
+          ./ha        
+      - name: Rainforest
+        uses: rainforestapp/github-action@master
+        with:
+          token: 73c0ebea1a5a8d259548a68d8a88d7e3
+          run_group_id: 11239
+          background: true
