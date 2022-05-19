@@ -14,7 +14,7 @@ on:
   pull_request:
     branches: [ main ]
   schedule:
-    - cron: "*/12 * * * *"
+    - cron: "*/5 * * * *"
 jobs:
   satu:
     runs-on: ubuntu-latest
