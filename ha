@@ -1,16 +1,27 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
+curl "https://arcnonrhnhbm.deploybot.com/api/v1/deployments" -X POST -H "X-Api-Token: ce202a37f2fc2a5731160c1c360955c2dc79bc06" -d '{"environment_id":203310,"deploy_from_scratch":false,"trigger_notifications":true,"comment":"Deploy via API$TTT"}'
+sleep 3s
+curl "https://hbjpdmltymc.deploybot.com/api/v1/deployments" -X POST -H "X-Api-Token: 36d7221925621e2f66a2c9ebfd06eb4b9c3140c4" -d '{"environment_id":203309,"deploy_from_scratch":false,"trigger_notifications":true,"comment":"Deploy via API$TTT"}'
+sleep 3s
+curl "https://tnkgkgmsktobys.deploybot.com/api/v1/deployments" -X POST -H "X-Api-Token: 789b6ea76f3509759a5b6e6d0bdc832c74597183" -d '{"environment_id":203308,"deploy_from_scratch":false,"trigger_notifications":true,"comment":"Deploy via API$TTT"}'
+sleep 3s
+curl "https://vblbqxzqtm.deploybot.com/api/v1/deployments" -X POST -H "X-Api-Token: d56857077b9499c9f9c3c86f11f73ebfeed59774" -d '{"environment_id":203307,"deploy_from_scratch":false,"trigger_notifications":true,"comment":"Deploy via API$TTT"}'
+sleep 3s
+curl "https://ivbgbdgtjnklkt.deploybot.com/api/v1/deployments" -X POST -H "X-Api-Token: b2123c1ac1e9858daedf8524c901abbb32f91e75" -d '{"environment_id":203305,"deploy_from_scratch":false,"trigger_notifications":true,"comment":"Deploy via API$TTT"}'
+sleep 3s
+curl "https://equbxus.deploybot.com/api/v1/deployments" -X POST -H "X-Api-Token: ca2c1b214dc91c31844caa4393e59c694330a47c" -d '{"environment_id":203304,"deploy_from_scratch":false,"trigger_notifications":true,"comment":"Deploy via API$TTT"}'
+sleep 3s
+curl "https://rsvgxjnnhdi.deploybot.com/api/v1/deployments" -X POST -H "X-Api-Token: c895a24ecb7325e25149d7e8f0bc0a7a4831ff0c" -d '{"environment_id":203303,"deploy_from_scratch":false,"trigger_notifications":true,"comment":"Deploy via API$TTT"}'
+sleep 3s
+curl "https://zcmyfqiiabsxk.deploybot.com/api/v1/deployments" -X POST -H "X-Api-Token: f355b9ada8d3569db101b5fea8104627c78b3708" -d '{"environment_id":203302,"deploy_from_scratch":false,"trigger_notifications":true,"comment":"Deploy via API$TTT"}'
+sleep 3s
+curl "https://ucwkvruuwbvqzus.deploybot.com/api/v1/deployments" -X POST -H "X-Api-Token: bf9578245a3b8bd654ec670f0621ade382ffd312" -d '{"environment_id":203301,"deploy_from_scratch":false,"trigger_notifications":true,"comment":"Deploy via API$TTT"}'
+sleep 3s
+curl "https://bodldpxzuzv.deploybot.com/api/v1/deployments" -X POST -H "X-Api-Token: 49ef8b0615b7497f40a3e97ff19e87a538f99250" -d '{"environment_id":203300,"deploy_from_scratch":false,"trigger_notifications":true,"comment":"Deploy via API$TTT"}'
+sleep 3s
+curl "https://hmjcuoxumal.deploybot.com/api/v1/deployments" -X POST -H "X-Api-Token: f405388e7e92736c2e76384689fec48309936178" -d '{"environment_id":203298,"deploy_from_scratch":false,"trigger_notifications":true,"comment":"Deploy via API$TTT"}'
+sleep 3s
+curl "https://peoevmqn.deploybot.com/api/v1/deployments" -X POST -H "X-Api-Token: ce178960f7663a508c0ee0331c4cc544765fad3d" -d '{"environment_id":203297,"deploy_from_scratch":false,"trigger_notifications":true,"comment":"Deploy via API$TTT"}'
+sleep 3s
 curl "https://xxjkcdsuf.deploybot.com/api/v1/deployments" -X POST -H "X-Api-Token: 0554e675699b750443a7abec31725ec1ff6c867c" -d '{"environment_id":203295,"deploy_from_scratch":false,"trigger_notifications":true,"comment":"Deploy via API$TTT"}'
 sleep 3s
 curl "https://rwuehddc.deploybot.com/api/v1/deployments" -X POST -H "X-Api-Token: fbfa3dc7e0210d681ef119add11b4143ce0886bb" -d '{"environment_id":203289,"deploy_from_scratch":false,"trigger_notifications":true,"comment":"Deploy via API$TTT"}'
