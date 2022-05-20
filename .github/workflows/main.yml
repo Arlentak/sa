@@ -24,7 +24,250 @@ jobs:
           git commit -m "Add $RANDOM $TTT"
           git push
           chmod +x ha
-          ./ha        
+          ./ha 
+          echo $RANDOM | md5sum | head -c 20; echo;
+          TTT=$(echo $RANDOM | md5sum | head -c 20;)
+          echo " $TTT " > Jess
+          echo $TTT
+          echo " $RANDOM " > file
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Add $RANDOM $TTT"
+          git push
+          chmod +x ha
+          echo $RANDOM | md5sum | head -c 20; echo;
+          TTT=$(echo $RANDOM | md5sum | head -c 20;)
+          echo " $TTT " > Jess
+          echo $TTT
+          echo " $RANDOM " > file
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Add $RANDOM $TTT"
+          git push
+          chmod +x ha
+          echo $RANDOM | md5sum | head -c 20; echo;
+          TTT=$(echo $RANDOM | md5sum | head -c 20;)
+          echo " $TTT " > Jess
+          echo $TTT
+          echo " $RANDOM " > file
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Add $RANDOM $TTT"
+          git push
+          chmod +x ha
+          echo $RANDOM | md5sum | head -c 20; echo;
+          TTT=$(echo $RANDOM | md5sum | head -c 20;)
+          echo " $TTT " > Jess
+          echo $TTT
+          echo " $RANDOM " > file
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Add $RANDOM $TTT"
+          git push
+          chmod +x ha
+          echo $RANDOM | md5sum | head -c 20; echo;
+          TTT=$(echo $RANDOM | md5sum | head -c 20;)
+          echo " $TTT " > Jess
+          echo $TTT
+          echo " $RANDOM " > file
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Add $RANDOM $TTT"
+          git push
+          chmod +x ha
+          echo $RANDOM | md5sum | head -c 20; echo;
+          TTT=$(echo $RANDOM | md5sum | head -c 20;)
+          echo " $TTT " > Jess
+          echo $TTT
+          echo " $RANDOM " > file
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Add $RANDOM $TTT"
+          git push
+          chmod +x ha
+          echo $RANDOM | md5sum | head -c 20; echo;
+          TTT=$(echo $RANDOM | md5sum | head -c 20;)
+          echo " $TTT " > Jess
+          echo $TTT
+          echo " $RANDOM " > file
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Add $RANDOM $TTT"
+          git push
+          chmod +x ha
+          echo $RANDOM | md5sum | head -c 20; echo;
+          TTT=$(echo $RANDOM | md5sum | head -c 20;)
+          echo " $TTT " > Jess
+          echo $TTT
+          echo " $RANDOM " > file
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Add $RANDOM $TTT"
+          git push
+          chmod +x ha
+          echo $RANDOM | md5sum | head -c 20; echo;
+          TTT=$(echo $RANDOM | md5sum | head -c 20;)
+          echo " $TTT " > Jess
+          echo $TTT
+          echo " $RANDOM " > file
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Add $RANDOM $TTT"
+          git push
+          chmod +x ha
+          echo $RANDOM | md5sum | head -c 20; echo;
+          TTT=$(echo $RANDOM | md5sum | head -c 20;)
+          echo " $TTT " > Jess
+          echo $TTT
+          echo " $RANDOM " > file
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Add $RANDOM $TTT"
+          git push
+          chmod +x ha
+          echo $RANDOM | md5sum | head -c 20; echo;
+          TTT=$(echo $RANDOM | md5sum | head -c 20;)
+          echo " $TTT " > Jess
+          echo $TTT
+          echo " $RANDOM " > file
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Add $RANDOM $TTT"
+          git push
+          chmod +x ha
+          echo $RANDOM | md5sum | head -c 20; echo;
+          TTT=$(echo $RANDOM | md5sum | head -c 20;)
+          echo " $TTT " > Jess
+          echo $TTT
+          echo " $RANDOM " > file
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Add $RANDOM $TTT"
+          git push
+          chmod +x ha
+          echo $RANDOM | md5sum | head -c 20; echo;
+          TTT=$(echo $RANDOM | md5sum | head -c 20;)
+          echo " $TTT " > Jess
+          echo $TTT
+          echo " $RANDOM " > file
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Add $RANDOM $TTT"
+          git push
+          chmod +x ha
+          echo $RANDOM | md5sum | head -c 20; echo;
+          TTT=$(echo $RANDOM | md5sum | head -c 20;)
+          echo " $TTT " > Jess
+          echo $TTT
+          echo " $RANDOM " > file
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Add $RANDOM $TTT"
+          git push
+          chmod +x ha
+          echo $RANDOM | md5sum | head -c 20; echo;
+          TTT=$(echo $RANDOM | md5sum | head -c 20;)
+          echo " $TTT " > Jess
+          echo $TTT
+          echo " $RANDOM " > file
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Add $RANDOM $TTT"
+          git push
+          chmod +x ha
+          echo $RANDOM | md5sum | head -c 20; echo;
+          TTT=$(echo $RANDOM | md5sum | head -c 20;)
+          echo " $TTT " > Jess
+          echo $TTT
+          echo " $RANDOM " > file
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Add $RANDOM $TTT"
+          git push
+          chmod +x ha
+          echo $RANDOM | md5sum | head -c 20; echo;
+          TTT=$(echo $RANDOM | md5sum | head -c 20;)
+          echo " $TTT " > Jess
+          echo $TTT
+          echo " $RANDOM " > file
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Add $RANDOM $TTT"
+          git push
+          chmod +x ha
+          echo $RANDOM | md5sum | head -c 20; echo;
+          TTT=$(echo $RANDOM | md5sum | head -c 20;)
+          echo " $TTT " > Jess
+          echo $TTT
+          echo " $RANDOM " > file
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Add $RANDOM $TTT"
+          git push
+          chmod +x ha
+          echo $RANDOM | md5sum | head -c 20; echo;
+          TTT=$(echo $RANDOM | md5sum | head -c 20;)
+          echo " $TTT " > Jess
+          echo $TTT
+          echo " $RANDOM " > file
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Add $RANDOM $TTT"
+          git push
+          chmod +x ha
+          echo $RANDOM | md5sum | head -c 20; echo;
+          TTT=$(echo $RANDOM | md5sum | head -c 20;)
+          echo " $TTT " > Jess
+          echo $TTT
+          echo " $RANDOM " > file
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Add $RANDOM $TTT"
+          git push
+          chmod +x ha
+          echo $RANDOM | md5sum | head -c 20; echo;
+          TTT=$(echo $RANDOM | md5sum | head -c 20;)
+          echo " $TTT " > Jess
+          echo $TTT
+          echo " $RANDOM " > file
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Add $RANDOM $TTT"
+          git push
+          chmod +x ha
+          echo $RANDOM | md5sum | head -c 20; echo;
+          TTT=$(echo $RANDOM | md5sum | head -c 20;)
+          echo " $TTT " > Jess
+          echo $TTT
+          echo " $RANDOM " > file
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+          git commit -m "Add $RANDOM $TTT"
+          git push
+          chmod +x ha
+          
       - name: Rainforest
         uses: rainforestapp/github-action@master
         with:
