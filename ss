@@ -11,3 +11,4 @@ git commit -m "Add config files."
 git push -u platform main
 sleep 2s
 done
+
