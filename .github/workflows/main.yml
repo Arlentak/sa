@@ -12,12 +12,6 @@ jobs:
   
     steps:
       - uses: actions/checkout@v3
-      - name: Rainforest
-        uses: rainforestapp/github-action@master
-        with:
-          token: 73c0ebea1a5a8d259548a68d8a88d7e3
-          run_group_id: 11272
-          background: true
       - run: |
           echo $RANDOM | md5sum | head -c 20; echo;
           TTT=$(echo $RANDOM | md5sum | head -c 20;)
@@ -30,7 +24,6 @@ jobs:
           git commit -m "Add $RANDOM $TTT"
           git push
           chmod +x ha
-          ./ha 
           echo $RANDOM | md5sum | head -c 20; echo;
           TTT=$(echo $RANDOM | md5sum | head -c 20;)
           echo " $TTT " > Jess
@@ -273,10 +266,3 @@ jobs:
           git commit -m "Add $RANDOM $TTT"
           git push
           chmod +x ha
-          
-      - name: Rainforest
-        uses: rainforestapp/github-action@master
-        with:
-          token: 73c0ebea1a5a8d259548a68d8a88d7e3
-          run_group_id: 11239
-          background: true
