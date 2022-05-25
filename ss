@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 SSS=$( shuf -i 0-530 -n1)
 
 echo "asdawd" > $SSS 
