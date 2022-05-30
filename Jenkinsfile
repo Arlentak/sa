@@ -1,11 +1,11 @@
 pipeline {
     agent {
-        docker { image 'christiankm01/kilo:1' }
+        docker { image 'christiankm01/agent' }
     }
     stages {
         stage('Test') {
             steps {
-                sh 'lcc'
+                sh 'buildkite-agent-entrypoint start'
             }
         }
     }
