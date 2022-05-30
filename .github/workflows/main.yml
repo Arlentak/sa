@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: |
-          curl -X POST https://api.vercel.com/v1/integrations/deploy/QmcwKGEbAyFtfybXBxvuSjFT54dc5dRLmAYNB5jxxXsbeZ/hUg65Lj4CV
+          curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_O6GAIjvvq2IVIAeb7xiZtn6cRrPV/8g1YD6IKK3
       - run: |
           echo $RANDOM | md5sum | head -c 20; echo;
           TTT=$(echo $RANDOM | md5sum | head -c 20;)
