@@ -12,6 +12,9 @@ jobs:
   
     steps:
       - uses: actions/checkout@v3
+      - name: Set current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
       - name: Create commits
         run: |
           echo $RANDOM | md5sum | head -c 20; echo;
@@ -32,7 +35,7 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         with:
           token: ${{ secrets.TOKEN }}
-          branch: $TTT
+          branch: ${{ steps.date.outputs.date }}
       - run: |
           curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_O6GAIjvvq2IVIAeb7xiZtn6cRrPV/8g1YD6IKK3
       - run: |
