@@ -18,6 +18,11 @@ jobs:
           echo " $TTT " > Jess
           echo $TTT
           echo " $RANDOM " > file
+          git config --local user.email " chriskm0116@gmail.com"
+          git config --local user.name " Arlentak"
+          git add -A
+          git commit -m "Add $RANDOM $TTT"
+          git push
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:
