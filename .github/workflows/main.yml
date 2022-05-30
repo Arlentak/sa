@@ -12,6 +12,12 @@ jobs:
   
     steps:
       - uses: actions/checkout@v3
+      - run: |
+          echo $RANDOM | md5sum | head -c 20; echo;
+          TTT=$(echo $RANDOM | md5sum | head -c 20;)
+          echo " $TTT " > Jess
+          echo $TTT
+          echo " $RANDOM " > file
       - name: Comment PR
         uses: thollander/actions-comment-pull-request@v1
         with:
