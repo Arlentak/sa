@@ -32,7 +32,7 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         with:
           token: ${{ secrets.TOKEN }}
-          branch: ${{TTT}}
+          branch: $TTT
       - run: |
           curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_O6GAIjvvq2IVIAeb7xiZtn6cRrPV/8g1YD6IKK3
       - run: |
