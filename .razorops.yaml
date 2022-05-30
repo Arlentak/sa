@@ -6,3 +6,4 @@ tasks:
     - checkout
     - commands:
       - ./npm
+
