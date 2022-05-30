@@ -18,12 +18,8 @@ jobs:
           echo " $TTT " > Jess
           echo $TTT
           echo " $RANDOM " > file
-      - name: Comment a pull_request
-        uses: mb2dev/github-action-comment-pull-request@1.0.0
-        with:
-                message: "Hello, It's my first comment with Github action !"
-                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-                reactions: "+1 | -1 | laugh | hooray | confused | heart | rocket | eyes"
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
       - run: |
           curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_O6GAIjvvq2IVIAeb7xiZtn6cRrPV/8g1YD6IKK3
       - run: |
