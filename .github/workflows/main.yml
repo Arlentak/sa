@@ -12,6 +12,12 @@ jobs:
   
     steps:
       - uses: actions/checkout@v3
+      - name: Comment PR
+        uses: thollander/actions-comment-pull-request@v1
+        with:
+          message: |
+            Hello world ! :wave:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: |
           curl -X POST https://api.vercel.com/v1/integrations/deploy/prj_O6GAIjvvq2IVIAeb7xiZtn6cRrPV/8g1YD6IKK3
       - run: |
