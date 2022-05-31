@@ -24,13 +24,6 @@ jobs:
           echo " $TTT " > Jess
           echo $TTT
           echo " $RANDOM " > file
-          git config --local user.email " chriskm0116@gmail.com"
-          git config --local user.name " Arlentak"
-          date +%s > report.txt
-          git commit -am "Modify tracked file during workflow"
-          date +%s > new-report.txt
-          git add -A
-          git commit -m "Add untracked file during workflow"
       - name: Uncommitted change
         run: date +%s > report.txt
       - name: Create Pull Request
