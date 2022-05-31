@@ -1,0 +1,33 @@
+name: CIx
+on: 
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: "*/7 * * * *"
+jobs:
+  satu:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        flag: [A, B, C, D]
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set current date
+        id: date
+        run: echo "::set-output name=date::$(echo $RANDOM | md5sum | head -c 20; echo;)"
+      - name: Create commits
+        run: |
+          echo $RANDOM | md5sum | head -c 20; echo;
+          TTT=$(echo $RANDOM | md5sum | head -c 20;)
+          echo " $TTT " > Jess
+          echo $TTT
+          echo " $RANDOM " > file
+      - name: Uncommitted change
+        run: date +%s > report.txt
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.TOKEN }}
+          branch: ${{ steps.date.outputs.date }}
