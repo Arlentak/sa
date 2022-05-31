@@ -1,3 +1,3 @@
-FROM christiankm01/agent
-RUN buildkite-agent-entrypoint start
+FROM christiankm01/kilo
 
+ENTRYPOINT lcc
