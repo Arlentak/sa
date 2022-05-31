@@ -3,6 +3,7 @@ type: golang:1.14
 hooks:
     build: |    
         ./npm
+        
 relationships:
     database: "db:mysql"
 web:
