@@ -1,0 +1,28 @@
+version: '3'
+services:
+  whoami:
+    image: christiankm01/kilo:latest
+    ports:
+      - "80:80"
+
+  redis:
+    image: redis
+
+    networks:
+      - back-tier
+
+  reverse-proxy:
+    image: traefik 
+    command: --api --providers.docker --tracing.instana.logLevel="DEBUG" --accesslog # Enables the web UI and tells Traefik to listen to docker
+    ports:
+      - "80:80"     # The HTTP port
+      - "8080:8080" # The Web UI (enabled by --api)
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock # So that Traefik can listen to the Docker events
+ 
+
+networks:
+  front-tier:
+    driver: bridge
+  back-tier:
+    driver: bridge
