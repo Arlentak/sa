@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Close Pull
-        uses: SvanBoxel/delete-merged-branch@main
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        uses: jessfraz/branch-cleanup-action@master
+        with:
+          secrets: ${{ secrets.TOKEN }}
           
