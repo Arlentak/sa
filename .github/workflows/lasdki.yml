@@ -1,4 +1,4 @@
-name: CIx
+name: CIxa
 on: 
   push:
     branches: [ main ]
