@@ -20,17 +20,4 @@ jobs:
  
       - uses: peter-evans/create-pull-request@v4
         with:
-          
           branch: ${{ steps.date.outputs.date }}
-      - run: |
-          echo $RANDOM | md5sum | head -c 2; echo;
-          TTT=$(echo $RANDOM | md5sum | head -c 2;)
-          echo " $TTT " > Jessmain.js
-          echo $TTT
-      - name: Set current date
-        id: dates
-        run: echo "::set-output name=dates::$(echo $RANDOM | md5sum | head -c 2; echo;)"
- 
-      - uses: peter-evans/create-pull-request@v4
-        with:
-          branch: ${{ steps.dates.outputs.dates }}
