@@ -9,19 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Create commits
-        run: |
-          echo $RANDOM | md5sum | head -c 2; echo;
-          TTT=$(echo $RANDOM | md5sum | head -c 2;)
-          echo " $TTT " > main.js
-          echo $TTT
-          echo " $RANDOM " > file
-          git config --global user.name "github-actions-$TTT"
-          git config --global user.email "$TTT-github-actions@users.noreply.github.com"
-          git add -A
-          git commit -m "Update main.js"
-          git push
-          
       - run: |
           echo $RANDOM | md5sum | head -c 2; echo;
           TTT=$(echo $RANDOM | md5sum | head -c 2;)
@@ -33,6 +20,7 @@ jobs:
  
       - uses: peter-evans/create-pull-request@v4
         with:
+          
           branch: ${{ steps.date.outputs.date }}
       - run: |
           echo $RANDOM | md5sum | head -c 2; echo;
