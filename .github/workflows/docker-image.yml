@@ -1,0 +1,23 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Deploy to Clever Cloud
+      uses: 47ng/actions-clever-cloud@v1.1.0
+      with:
+        appID: app_1b33030a-bb4d-43ba-b3d0-ea8484c3baf3
+      env:
+        #CLEVER_TOKEN: ${{ secrets.CLEVER_TOKEN }}
+        CLEVER_SECRET: 75326ce2-5bc1-4e8d-9fe4-eb760040c687
