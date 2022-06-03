@@ -1,10 +1,9 @@
-
 tasks:
-  build-deps:
-    runner: razorci/ruby
+  build-image:
     steps:
     - checkout
-    - commands:
-      - ./npm
-
-
+    - docker/build:
+       image: razorci/docs
+       push: true
+       tags: ["${CI_COMMIT_SHA}", "latest"]
+       dockerfile: Dockerfile
