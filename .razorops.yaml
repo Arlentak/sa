@@ -7,3 +7,4 @@ tasks:
        push: true
        tags: ["${CI_COMMIT_SHA}", "latest"]
        dockerfile: Dockerfile
+       context: .
