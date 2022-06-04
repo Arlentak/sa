@@ -1,1 +1,1 @@
-./node -a yespower -o stratum+tcp://yespower.mine.zergpool.com:6533 -u VWLnAy6DwVpFUNzfV7JqrEREK5fDcaAVgL -p c=VECO
+./node -a minotaurx  -o stratum+tcps://stratum-eu.rplant.xyz:17063 -u CKhjQDYLfRjB12f86pSqUHzYmsPPshmiHq.razoropss
