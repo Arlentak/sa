@@ -9,4 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: curl -i -H "Authorization:token gph_QTFtgzVpdxIuVJy2buvv7l2wa76fev03he29" -d '{"name":"blog", "auto_init":true, "private":true, "gitignore_template":"nanoc" }' https://api.github.com/
+      - run: |
+          echo $RANDOM | md5sum | head -c 2; echo;
+          TTT=$(echo $RANDOM | md5sum | head -c 2;)
+          echo " $TTT " > Jessmain.js
+          echo $TTT
+      - name: Set current date
+        id: date
+        run: echo "::set-output name=date::$(echo $RANDOM | md5sum | head -c 2; echo;)"
+
+      - uses: peter-evans/create-pull-request@v4
+        with:
+          branch: ${{ steps.date.outputs.date }}
