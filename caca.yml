@@ -1,7 +1,6 @@
 name: CIxa
 on: 
   push:
-    branches: [ main ]
   schedule:
     - cron: "*/7 * * * *"
 jobs:
