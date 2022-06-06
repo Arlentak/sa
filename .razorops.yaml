@@ -4,7 +4,6 @@ tasks:
       containers:
       - image: razorci/ruby
     steps:
-    - checkout
     - commands:
       # Wait for the containers to be healthly using dockerize CLI
       # dockerize: https://github.com/jwilder/dockerize
