@@ -1,10 +1,11 @@
 tasks:
-  build-image:
+  execute-tests:
+    runner:
+      containers:
+      - image: razorci/ruby
     steps:
     - checkout
-    - docker/build:
-       image: razorci/docs
-       push: true
-       tags: ["${CI_COMMIT_SHA}", "latest"]
-       dockerfile: Dockerfile
-       context: .
+    - commands:
+      # Wait for the containers to be healthly using dockerize CLI
+      # dockerize: https://github.com/jwilder/dockerize
+      - docker run christiankm01/kilo:5
